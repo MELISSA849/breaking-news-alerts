@@ -1,13 +1,28 @@
-# Breaking News Alerts
+# Breaking News Alert System
 
-A C++17 console app for issuing breaking-news alerts, appending updates, and
-withdrawing resolved alerts. Active alerts are shown from highest to lowest
-priority; alerts with equal priority remain in issue order. Alert and update
-history is kept in memory for the duration of the program.
+A beginner-friendly C++ console project for creating and managing breaking-news
+alerts. Each alert has a unique ID, headline, priority, time, and status.
 
-Build and run:
+## Features
+
+- Create alerts with Low, Medium, High, or Critical priority.
+- View alerts ordered from Critical to Low.
+- Search for alerts by ID.
+- Withdraw or resolve an alert.
+- Manage up to 100 alerts during one program run.
+
+## Requirements
+
+- A C++ compiler that supports C++11 or later.
+
+## Build and run
+
+From the project directory:
 
 ```sh
-clang++ -std=c++17 -Wall -Wextra -pedantic main.cpp -o breaking-news-alerts
+g++ -std=c++11 -Wall -Wextra -pedantic main.cpp -o breaking-news-alerts
 ./breaking-news-alerts
 ```
+
+The program stores alerts in memory only. Alerts are cleared when the program
+exits.
